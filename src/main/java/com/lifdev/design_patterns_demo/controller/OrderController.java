@@ -21,7 +21,7 @@ public class OrderController {
 
     @GetMapping("/pay")
     public String pay() {
-        facade.placeOrder("card", 5000);
+        //facade.placeOrder("card", 5000);
         return "OK";
     }
     @GetMapping("/singleton")

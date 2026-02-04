@@ -1,5 +1,6 @@
+package com.lifdev.design_patterns_demo.controller;
 
-import com.lifdev.design_patterns_demo.factory.PaymentService;
+import com.lifdev.design_patterns_demo.factory.PaymentFactoryService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/factory")
 public class FactoryController {
 
-    private final PaymentService service;
+    private final PaymentFactoryService service;
 
-    public FactoryController(PaymentService service) {
+    public FactoryController(PaymentFactoryService service) {
         this.service = service;
     }
 

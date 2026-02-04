@@ -4,7 +4,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Map;
 
-@Service("pay22")
+@Service
 public class PaymentService {
 
     private final Map<String, PaymentStrategy> strategies;

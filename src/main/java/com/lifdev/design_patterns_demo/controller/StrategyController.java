@@ -1,24 +1,23 @@
 package com.lifdev.design_patterns_demo.controller;
 
-import com.lifdev.design_patterns_demo.adapter.PaymentAdapterService;
+import com.lifdev.design_patterns_demo.strategy.PaymentService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/adapter")
-public class AdapterController {
+@RequestMapping("/strategy")
+public class StrategyController {
 
-    /*private final PaymentAdapterService service;
+    private final PaymentService service;
 
-    public AdapterController(PaymentAdapterService service) {
+    public StrategyController(PaymentService service) {
         this.service = service;
     }
 
     @GetMapping("/pay")
     public String pay() {
-        service.process(7000);
+        service.pay("card", 8000);
         return "Paiement OK";
-    }*/
+    }
 }
-

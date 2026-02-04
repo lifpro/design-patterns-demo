@@ -10,11 +10,9 @@ import java.util.Map;
 public class PaymentFactory {
 
     private final Map<String, Payment> payments;
-
     public PaymentFactory(Map<String, Payment> payments) {
         this.payments = payments;
     }
-
     public Payment getPayment(String type) {
         return payments.get(type);
     }

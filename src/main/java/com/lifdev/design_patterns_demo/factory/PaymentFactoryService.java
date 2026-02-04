@@ -2,12 +2,12 @@ package com.lifdev.design_patterns_demo.factory;
 
 import org.springframework.stereotype.Service;
 
-@Service
-public class PaymentService {
+@Service("sfactory")
+public class PaymentFactoryService {
 
     private final PaymentFactory factory;
 
-    public PaymentService(PaymentFactory factory) {
+    public PaymentFactoryService(PaymentFactory factory) {
         this.factory = factory;
     }
 
